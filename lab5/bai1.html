@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>bai1</title>
+    <script>
+      function display() {
+        // truy cập vào pro qty
+        var pro = document.getElementById("pro");
+        var name = pro.innerText;
+        //tinh tiền
+        var price = pro.getAttribute("data-price");
+        var qty = document.getElementById("qty").value;
+        var amount = price * qty;
+        //đưa tong tiền lên amount
+        //lấy dữ liệu biến name vao laber co id la name
+        document.getElementById("name").innerText = name;
+        document.getElementById("amount").innerText= amount;
+      }
+    </script>
+  </head>
+  <body>
+    <label id="pro" data-price="1950">iPhone 9</label>
+    <input type="number" id="qty" value="1" />
+    <button onclick="display()">Ok</button>
+    <hr />
+    <h3>Name: <span id="name">?</span></h3>
+    <h3>Amount: <span id="amount">?</span></h3>
+  </body>
+</html>

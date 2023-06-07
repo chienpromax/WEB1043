@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      form {
+        width: 500px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        margin-top: 100px;
+      }
+      input {
+        height: 50px;
+        font-size: 20px;
+        margin: 5px 0;
+        padding: 3px 5px;
+      }
+      button {
+        width: 100px;
+        height: 60px;
+        margin-left: 710px;
+      }
+      #err {
+        width: 500px;
+        height: 50px;
+        font-size: 40px;
+        color: red;
+        text-align: center;
+        margin: auto;
+      }
+    </style>
+
+    <script>
+      function login() {
+        var firstName = document.getElementsByName("tên")[0];
+        var lastName = document.getElementsByName("họ")[0];
+        var age = document.getElementsByName("tuổi")[0];
+        if (firstName.value == "") {
+        let err = document.getElementById("err");
+          err.innerText = "nhập lại tên";
+          return false;
+        }
+        if (lastName.value == "") {
+          var err = document.getElementById("err");
+          err.innerText = "nhập lại họ";
+          return false;
+        }
+        if (age.value == "") {
+          var err = document.getElementById("err");
+          err.innerText = "nhập lại tuổi";
+          return false;
+        }
+        if (age.value < 0) {
+          var err = document.getElementById("err");
+          err.innerText = "Tuổi Nhập sai";
+          return false;
+        }
+        if (firstName.value != "" && lastName.value != "" && age.value != "") {
+          alert(`đăng nhập thành công:
+        tên: ${firstName.value},
+        họ: ${lastName.value},
+        tuổi: ${age.value}`);
+        location.reload();
+          return true;
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <form action="#">
+      <div id="err"></div>
+      <input type="text" name="tên" placeholder="tên" />
+      <input type="text" name="họ" placeholder="họ" />
+      <input type="number" name="tuổi" placeholder="tuổi" />
+    </form>
+    <button onclick="login()">Submit</button>
+  </body>
+</html>

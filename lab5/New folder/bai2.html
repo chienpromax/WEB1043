@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      function them(button) {
+        var row = button.parentElement.parentElement.cloneNode(true);
+        var btnXoa = row.getElementsByTagName("button")[0];
+        btnXoa.innerText = "xóa";
+        btnXoa.setAttribute("onclick", "xoa(this)");
+        document.getElementById("cart").appendChild(row);
+        tong();
+      }
+
+      function xoa(button) {
+        var row = button.parentElement.parentElement; //sac dinh dong can xoa
+        document.getElementById("cart").removeChild(row); //thuc hien xoa
+        tong();
+      }
+
+      function tong() {
+        var cart = document.getElementById("cart");
+        var rows = cart.getElementsByTagName("tr");
+        var tong = 0;
+        for (var i = 0; i < rows.length; i++) {
+          var cells = rows[i].getElementsByTagName("td");
+          var price = cells[1].innerText.substring(1);
+          tong += Number(price);
+        }
+        document.getElementById("Tong").innerText = tong;
+      }
+    </script>
+  </head>
+  <body>
+    <h2>Danh mục hàng hóa</h2>
+    <table border="1">
+      <tr>
+        <td>iphone 9</td>
+        <td>$2700</td>
+        <td>
+          <button onclick="them(this)">Thêm</button>
+        </td>
+      </tr>
+      <tr>
+        <td>Sumsung Star</td>
+        <td>$1500</td>
+        <td>
+          <button onclick="them(this)">Thêm</button>
+        </td>
+      </tr>
+      <tr>
+        <td>Nokia 2020</td>
+        <td>$1200</td>
+        <td>
+          <button onclick="them(this)">Thêm</button>
+        </td>
+      </tr>
+      <tr>
+        <td>sony Xperia</td>
+        <td>$1700</td>
+        <td>
+          <button onclick="them(this)">Thêm</button>
+        </td>
+      </tr>
+    </table>
+    <h2>Giỏ hàng của bạn</h2>
+    <div id="not-emty">
+      <table border="1" id="cart"></table>
+      <h2>Tổng số tiền $<span id="Tong">0</span></h2>
+    </div>
+  </body>
+</html>

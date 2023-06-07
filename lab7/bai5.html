@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Đặt hàng</h1>
+    <form onsubmit="kiemTra()">
+      <div class="group-input">
+        <label for="">Sản Phẩm: </label>
+        <input type="text" id="san_pham" />
+      </div>
+      <div class="group-input">
+        <label for="">Loại: </label>
+        <select name="" id="loai">
+          <option checked value="" hidden></option>
+          <option value="1">loại 1</option>
+          <option value="2">loại 2</option>
+          <option value="3">loại 3</option>
+        </select>
+      </div>
+      <div class="group-input">
+        <label for="">Đơn giá: </label>
+        <input type="number" id="don_gia" />
+      </div>
+      <div class="group-input">
+        <label for="">Nơi nhận hàng: </label>
+        <input type="radio" name="dia_chi" id="noithanh" data-check="1" />
+        <label for="noithanh">Nội thành</label>
+        <input type="radio" name="dia_chi" id="ngoaithanh" data-check="" />
+        <label for="ngoaithanh">Ngoại thành</label>
+      </div>
+      <div style="display: none" class="group-input" id="phi_vc">
+        <label for="">Phí vận chuyển: </label>
+        <input type="number" value="100000" disabled />
+      </div>
+      <hr />
+      <button type="submit" onclick="hienThi()">Đặt mua</button>
+    </form>
+    <script>
+      function hienThi(visible) {
+        let phi_vc = document.getElementById("phi_vc");
+        phi_vc.style.display = visible ? "nome" : "block";
+      }
+      let vanChuyen = document.querySelectorAll('input[name="dia_chi"]');
+      vanChuyen.forEach((element) => {
+        element.addEventListener("click", function () {
+          let data_check = element.getAttribute("data-check");
+          hienThi(data_check);
+        });
+      });
+      function kiemTra() {
+        let sp = document.getElementById("san_pham");
+        if (sp.value.length == 0) {
+          alert("Vui lòng nhập tên sản phẩm!");
+          return;
+        }
+        let gia = document.getElementById("don_gia");
+        if (isNaN(gia.value)) {
+          alert("Vui lòng nhập số!");
+          return;
+        } else if (parseFloat(gia.value) <= 0) {
+          alert("Vui lòng nhập số dương!");
+          return;
+        }
+        let loai = document.getElementById("loai");
+        if (loai.value.length == 0) {
+          alert("Vui lòng chọn loại sản phẩm!");
+          return;
+        }
+        let radios = document.getElementsByName("dia_chi");
+        if (!radios[0].checked && !radios[1].checked) {
+          alert("Vui lòng chọn nơi nhận hàng!");
+          return;
+        }
+        alert("Chúc mừng bạn đã nhập đúng");
+      }
+    </script>
+  </body>
+</html>

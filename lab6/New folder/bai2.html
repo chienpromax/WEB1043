@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>LAB_6 Bài_2 Fpoly WEB1043</title>
+  </head>
+  <style>
+    button {
+      width: 60px;
+      height: 60px;
+    }
+  </style>
+  <script>
+    var flag = true;
+    let count = 0;
+    function mark(index) {
+      var button = document.getElementsByTagName("button")[index];
+      button.innerText = flag ? "x" : "o";
+      button.setAttribute('disable','true');
+      button.style.backgroundColor = flag ? "aqua" : "yellow";
+      flag = !flag
+      count++;
+      if(count == 9){
+        alert("end game !");
+        location.reload();
+      }
+    }
+  </script>
+  <body style="text-align: center;">
+    <h3>tictactoe game</h3>
+    <table align="center">
+        <tr>
+            <td><button onclick="mark(0)"></button></td>
+            <td><button onclick="mark(1)"></button></td>
+            <td><button onclick="mark(2)"></button></td>
+        </tr>
+        <tr>
+            <td><button onclick="mark(3)"></button></td>
+            <td><button onclick="mark(4)"></button></td>
+            <td><button onclick="mark(5)"></button></td>
+        </tr>
+        <tr>
+            <td><button onclick="mark(6)"></button></td>
+            <td><button onclick="mark(7)"></button></td>
+            <td><button onclick="mark(8)"></button></td>
+        </tr>
+    </table>
+    </div>
+  </body>
+</html>

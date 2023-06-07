@@ -1,0 +1,143 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.tong{
+    width: 1300px;
+    height: 1800px;
+    margin: 0 auto;
+}
+header{
+    background-image: url(anh/back.jpg);
+    background-size: 100%;
+    width: 1300px;
+    height: 500px;
+}
+nav {
+    margin-top: -4px;
+    background-color: #353536;
+}
+nav ul {
+    text-align: center;
+    overflow: hidden;
+    margin: 0px;
+    padding: 0px;
+}
+nav ul li {
+    margin: 0px 20px;
+    line-height: 50px;
+    display: inline-block;
+    padding: 0px 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    font-family: 'Itim', cursive
+}
+
+nav ul li:hover {
+    background-color: black;
+}
+#content {
+    width: 1300px;
+}
+
+.tittle {
+    padding-left: 50px;
+}
+
+.khung {
+    margin-top: 30px;
+    margin-left: 300px;
+    width: 700px;
+    border: 1px solid white;
+    border-radius: 5px;
+    box-shadow: 0 0 10px #192041;
+}
+
+#frames2,
+.select,
+#frames {
+    width: 405px;
+    height: 40px;
+    border: 2px solid rgb(194, 192, 192);
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+
+#noidung {
+    margin-top: 5px;
+    margin-left: 50px;
+}
+
+.nho {
+    margin-left: 10px;
+    line-height: 40px;
+}
+
+.dk {
+    margin-bottom: px;
+    width: 400px;
+    height: 35px;
+}
+
+.select {
+    padding-left: 10px;
+    width: 407px;
+    height: 40px;
+    margin-bottom: 5px;
+}
+
+.note {
+    width: 400px;
+    height: 70px;
+    border: 2px solid rgb(194, 192, 192);
+    border-radius: 5px;
+}
+
+.button:hover {
+    background-color: black;
+}
+
+.button {
+    width: 70px;
+    height: 30px;
+    color: white;
+    background-color: #192041;
+    border: none;
+    cursor: pointer;
+}
+
+.but {
+    margin-bottom: 20px;
+}
+
+legend {
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.p {
+    margin-top: 0;
+    color: red;
+}
+
+
+
+footer {
+    margin-top: 20px;
+    height: 60px;
+    background-color: #39393c;
+}
+footer p {
+    line-height: 40px;
+    font-size: large;
+    text-align: center;
+    color: aliceblue;
+}
+
+
+
+

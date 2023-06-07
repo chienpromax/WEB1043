@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="css/ban.css">
+</head>
+
+<body>
+    <div class="boxcenter">
+        <div class="row mb header">
+            <h1>Đắng kí mua hàng</h1>
+        </div>
+        <div class="row mb menu">
+            <ul>
+                <li><a href="index.html">Trang chủ</a></li>
+                <li><a href="univer.html">đăng Nhập</a></li>
+                <li><a href="ban.html">đặt hàng</a></li>
+            </ul>
+        </div>
+        <div class="row mb ">
+            <div class="boxtrai mr">
+
+                <div class="row mb">
+                    <h1>GIỎ HÀNG</h1>
+                    <table>
+                        <tr>
+                            <th>STT</th>
+                            <th>Hình</th>
+                            <th>tên</th>
+                            <th>đơn giá</th>
+                            <th>Số lượng</th>
+                            <th>Thành tiền ($)</th>
+                        </tr>
+                        <tbody id="mycart"></tbody>
+                    </table>
+                </div>
+
+                <div class="row">
+                    <h1>Đăng kí NHẬN HÀNG</h1>
+                    <div id="err"></div>
+                    <table class="thongtinnhanhang">
+                        <tbody id="thongtinnhanhang">
+                        <tr>
+                            <td width="20%">Họ tên</td>
+                            <td><input type="text" name="hoten"></td>
+                        </tr>
+                        <tr>
+                            <td>Địa chỉ</td>
+                            <td><input type="text" name="diachi"></td>
+                        </tr>
+                        <tr>
+                            <td>Điện thoại</td>
+                            <td><input type="text" name="dienthoai"></td>
+                        </tr>
+                        <tr>
+                            <td>Email</td>
+                            <td><input type="text" name="email"></td>
+                        </tr>
+                    </tbody>
+                    </table>
+                </div>
+
+                <div class="row mb">
+                    <button class="dongy" onclick="dathang()">ĐỒNG Ý ĐẶT HÀNG</button>
+                </div>
+            </div>
+        <div class="row mb footer">
+            chien pd 08548
+        </div>
+    </div>
+    </div>
+<script src="js/ban.js"></script>
+<script>showgiohang_thanhtoan();</script>
+</body>
+
+</html>

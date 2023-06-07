@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/amimetion.css" />
+  </head>
+  <body onload="aotu();">
+    <div class="giohang">
+      <a  onclick="showcart()"
+        ><img src="anh/giohang.png" /><span id="countsp">0</span></a
+      >
+    </div>
+    
+    <div class="tong">
+      <header></header>
+      <nav>
+        <ul>
+          <li><a href="index.html">Trang Chủ</a></li>
+          <li><a href="univer.html">Đăng Nhập</a></li>
+          <li><a href="ban.html">Đặt hàng</a></li>
+        </ul>
+        <form class="tim" action="" method="">
+          <input class="tim" name="tim" placeholder="tìm Kiếm" type="text" />
+          <button class="tim" type="submit" onclick="Search()">
+            <img src="anh/kinh lup.webp" alt="" />
+          </button>
+        </form>
+      </nav>
+      <aside>
+        <h1>Thỏa Sức Mua Sắm</h1>
+        <div class="anh">
+          <img
+            id="slider"
+            src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn/2023/03/banner/mi12-720-220-720x220.png"
+          />
+        </div>
+        <div class="iconSP">
+          <div class="icon">
+            <div class="tenicon">điện thoại giá sốc</div>
+            <div class="anhicon">
+              <img
+                src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn//content/dien-thoai-120x120-7.png"
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="icon">
+            <div class="tenicon">laptop giá sốc</div>
+            <div class="anhicon">
+              <img
+                src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn//content/Icon-100x100--1--100x100-1.png"
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="icon">
+            <div class="tenicon">đồng hồ giá sốc</div>
+            <div class="anhicon">
+              <img
+                src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn//content/DH-XA%CC%89-KHO-ICON--120x120-120x120.png"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+
+        <div class="nut">
+          <button class="truoc" onclick="prev()"><</button>
+          <button class="sau" onclick="next()">></button>
+        </div>
+        <img src="/hangban/Promote-TZ-Des-1200x100-1.webp" alt="" /><br />
+
+        <div id="time"></div>
+        
+        <div class="sanpham">
+          <div class="sp">
+            <div class="tensp">xiaome redmi</div>
+            <div class="giasp">
+              hàng sắp về <br />
+              dự kiến: 5.780.000 VNĐ
+            </div>
+            <a href="phone.html">
+              <img
+                src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn/Products/Images/42/303163/xiaomi-redmi-12c-blue-thumb-600x600.jpg"
+                alt="ipon 14"
+            /></a>
+          </div>
+          <div class="sp">
+            <div class="tensp">realme c35</div>
+            <div class="giasp">4.790.000 VNĐ</div>
+            <img
+              src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn/Products/Images/42/304090/realme-c35-den-thumb-600x600.jpg"
+              alt="ipon 14"
+            />
+          </div>
+          <div class="sp">
+            <div class="tensp">dong-ho-haylou</div>
+            <div class="giasp">550 VNĐ</div>
+            <img
+              src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn/Products/Images/7077/286740/dong-ho-haylou-gst-den-thumbnew-600x600.jpeg"
+              alt="ipon 14"
+            />
+          </div>
+          <div class="sp">
+            <div class="tensp">iPhone-14 pro max</div>
+            <div class="giasp">39.999.000 VNĐ</div>
+            <img
+              src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn/Products/Images/42/289700/iphone-14-pro-max-vang-thumb-600x600.jpg"
+              alt="ipon 14"
+            />
+          </div>
+          <div class="sp">
+            <div class="tensp" style="text-align: center">vivo-y02s</div>
+            <div class="giasp">3.290.000 VNĐ</div>
+            <img
+              src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn/Products/Images/42/285032/vivo-y02s-thumb-1-2-3-600x600.jpg"
+              alt="ipon 14"
+            />
+          </div>
+        </div>
+        <img
+          style="margin-top: 110px"
+          src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn/2023/03/banner/Tagline-Hot-sale---DESK-1200x120.png"
+          alt=""
+        />
+        <div class="sanpham">
+          <div class="sp">
+            <div class="boximg"><img src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn/Products/Images/54/187375/tai-nghe-bluetooth-kanen-k9-14-600x600.jpg" alt="ipon 14"/></div>
+            <p>$<span>10</span></p>
+            <a href="">tai nghe chup kanen k9</a>
+            <input type="number" name="soluong" min="1" max="5" value="1" />
+            <button onclick="themvaogiohang(this)" class="giohang">
+              <img src="anh/giohang.png" alt="" />
+            </button>
+          </div>
+          <div class="sp">
+            <div class="boximg">
+              <img
+                src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn/Products/Images/42/301603/realme-c35-vang-thumb-600x600.jpg"
+                alt="ipon 14"
+              />
+            </div>
+            <p>$<span>20</span></p>
+            <a href="">Điện thoại realme C55 6GB</a>
+            <input type="number" name="soluong" min="1" max="5" value="1" />
+            <button onclick="themvaogiohang(this)" class="giohang">
+              <img src="anh/giohang.png" alt="" />
+            </button>
+          </div>
+          <div class="sp">
+            <div class="boximg">
+              <img
+                src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn/Products/Images/9499/230315/adapter-sac-type-c-20w-cho-iphone-ipad-apple-mhje3-avatar-1-1-600x600.jpg"
+                alt="ipon 14"
+              />
+            </div>
+            <p>$<span>30</span></p>
+            <a href="">Adapter Sạc Type C 20W</a>
+            <input type="number" name="soluong" min="1" max="5" value="1" />
+            <button onclick="themvaogiohang(this)" class="giohang">
+              <img src="anh/giohang.png" alt="" />
+            </button>
+          </div>
+          <div class="sp">
+            <div class="boximg">
+              <img
+                src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn/Products/Images/57/298873/pin-du-phong-polymer-10000-mah-type-c-15w-pd-belkin-pocket-power-bpb011-thumb-600x600.jpg"
+                alt="ipon 14"
+              />  
+            </div>
+            <p>$<span>40</span></p>
+            <a href="">Adapter Sạc Type C 25W</a>
+            <input type="number" name="soluong" min="1" max="5" value="1" />
+            <button onclick="themvaogiohang(this)" class="giohang">
+              <img src="anh/giohang.png" alt="" />
+            </button>
+          </div>
+          <div class="sp">
+            <div class="boximg">
+              <img
+                src="https://cdn.tgdd.vn/Products/Images/86/229575/chuot-bluetooth-microsoft-arc-thumb4-600x600.jpg"
+                alt="ipon 14"
+              />
+            </div>
+            <p>$<span>50</span></p>
+            <a href="">Chuột Bluetooth</a>
+            <input type="number" name="soluong" min="1" max="5" value="1" />
+            <button onclick="themvaogiohang(this)" class="giohang">
+              <img src="anh/giohang.png" alt=""/>
+            </button>
+          </div>
+        </div>
+      </aside>
+
+      <footer>
+        <p>trần xuân chiến - PD 08548</p>
+        <div id="showcart">
+          <table>
+            <tr>
+              <th>Stt</th>
+              <th>Hinh</th>
+              <th>don gia</th>
+              <th>ten</th>
+              <th>So luong</th>
+              <th>thanh tien</th>
+              <th>xóa</th>
+            </tr>
+            <tbody id="mycart"></tbody>
+          </table>
+          <br />
+          <a href="ban.html">thanh toan</a>
+        </div>
+      </footer>
+    </div>
+    <script src="js/index.js"></script>
+    <script src="js/ban.js"></script>
+  </body>
+</html>

@@ -1,0 +1,125 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.tong{
+    width: 1300px;
+    height: 1800px;
+    margin: 0 auto;
+    background-color: #eeeef5;
+}
+header{
+    background-image: url(anh/thegioi.webp);
+    background-size: 100%;
+    width: 1300px;
+    height: 300px;
+}
+nav {
+    margin-top: -4px;
+    background-color: #353536;
+}
+nav ul {
+    text-align: center;
+    overflow: hidden;
+    margin: 0px;
+    padding: 0px;
+}
+nav ul li {
+    margin: 0px 20px;
+    line-height: 50px;
+    display: inline-block;
+    padding: 0px 15px;
+}
+nav ul li a {
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    font-variant: small-caps;
+}
+
+nav ul li:hover {
+    background-color: black;
+}
+aside {
+    text-align: center;
+    background-image: url(/anh/nen2.webp);
+    background-repeat:repeat-x ;
+    background-size: 100%;
+    text-transform: uppercase;
+    height: 1530px;
+    font-variant: small-caps;
+    margin-top: -30px;
+    position: relative;
+}
+.anh img{
+    margin-top: 150px;
+    width: 950px;
+    height: 440px;
+}
+.nut{
+    position: relative;
+}
+.truoc{
+    position: absolute;
+    left: 137px;
+    bottom: 200px;
+    width: 35px;
+    height: 55px;
+    border: 3px solid black;
+    border-radius: 5px;
+}
+.sau{
+    position: absolute;
+    right: 137px;
+    bottom: 200px;
+    width: 35px;
+    height: 55px;
+    border: 3px solid black;
+    border-radius: 5px;
+}
+aside h1{
+    position: absolute;
+    top: 40px;
+    right: 580px;
+    font-size: 40px;
+    color: rgb(255, 86, 2);
+}
+.sanpham img{
+    width: 230px;
+    height: 250px;
+    background-color: aliceblue;
+    border: 3px gray solid;
+    box-shadow: 1px 8px 4px 1px gray;
+    border-radius: 10px;
+    margin-top: 50px;
+    margin: 5px;
+    padding-top: 50px;
+}
+.sanpham img:hover{
+    width: 232px;
+    height: 250px;
+    border: 3px rgb(177, 102, 102) solid;
+    box-shadow: 1px 8px 4px 1px rgb(177, 102, 102);
+    border-radius: 10px;
+    margin-top: 50px;
+    margin: 5px;
+    padding-top: 50px;
+}
+aside h2{
+    margin-top: 10px;
+    font-size: 40px;
+    color: rgb(255, 86, 2);
+}
+
+footer {
+    margin-top: 20px;
+    height: 60px;
+    background-color: #3d3e42;
+}
+footer p {
+    line-height: 40px;
+    font-size: large;
+    text-align: center;
+    color: aliceblue;
+}
+

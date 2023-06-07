@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    div {
+      background-color: purple;
+      width: 100px;
+      height: 100px;
+      position: absolute;
+    }
+  </style>
+  <script>
+    function toTheRight() {
+      let b = document.getElementById("block");
+      let x = 0;
+      setInterval(function () {
+        if (x === 1200) {
+          clearInterval();
+        } else {
+          x++;
+          b.style.left = x + "px";
+        }
+      }, 2);
+    }
+  </script>
+  <body>
+    <button onclick="toTheRight()">Sang Phải</button>
+    <div id="block"></div>
+  </body>
+</html>

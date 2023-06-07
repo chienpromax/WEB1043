@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      button {
+        border-radius: 10%;
+        width: 50px;
+        height: 50px;
+        color: green;
+      }
+      .hien {
+        display: block;
+      }
+      .an {
+        display: none;
+      }
+      .mycss{
+        background-color: aqua;
+        color: blue;
+      }
+    </style>
+  </head>
+  <body id="hi">
+    <h1 id="hello" class="hien" onmouseover="toogle">hello</h1>
+    <button
+      style="background-color: black"
+      id="hello"
+      onclick="doiNen()"
+    ></button>
+    <button id="hello" onclick="doiNen1()"></button>
+    <button onclick="an()">an</button>
+    <button onclick="hien()">hien</button>
+
+    <button onclick="an()">an</button>
+    <button onclick="tooglehien()">hien h1</button>
+    <script>
+      function button(){
+        var arrbuton= document.getElementById('hello')
+        for (let  button of arrbuton) {
+          button.setAttribute('background-color: aqua;color: blue;')
+          
+        }
+      }
+      function tooglehien() {
+        var myh1 = document.getElementById("hello");
+        myh1.classList.toggle("hien");
+      }
+      function toogle() {
+        var myh1 = document.getElementById("hello");
+        myh1.classList.toggle("mycss");
+      }
+      function hien() {
+        var myh1 = document.getElementById("hello");
+        myh1.classList.remove("an");
+        myh1.classList.add("hien");
+      }
+      function an() {
+        var myh1 = document.getElementById("hello");
+        myh1.classList.add("an");
+        myh1.classList.remove("hien");
+      }
+      function doiNen() {
+        var myh1 = document.getElementById("hi");
+        myh1.style.backgroundColor = "black";
+      }
+      function doiNen1() {
+        var myh1 = document.getElementById("hi");
+        myh1.style.backgroundColor = "azure";
+      }
+      var myh1 = document.getElementById("hello");
+      myh1.style.backgroundColor = "red";
+      myh1.style.color = "yellow";
+      myh1.style.textAlign = "center";
+      function doinen2() {
+        var mang = Document.getElementsByTagName("p");
+        for (let index = 0; index < mang.length; index++) {
+          mang[index].style.backgroundColor = "green";
+          mang[index].style.fontSize = "30";
+        }
+      }
+    </script>
+  </body>
+</html>

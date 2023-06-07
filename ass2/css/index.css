@@ -1,0 +1,391 @@
+.giohang {
+    position: fixed;
+    border-radius: 10px;
+   margin: auto;
+    height: 40px;
+    background-image: linear-gradient(#F90, #F60);
+    padding: 10px;
+  }
+  
+  .giohang img {
+    width: 40px;
+    float: left;
+    margin-right: 5px;
+  }
+  
+  .giohang span {
+    font-weight: bold;
+    font-size: 2vw;
+    color: yellow;
+    height: 40px;
+    line-height: 40px;
+  }
+  #showcart{
+    width: 900px;
+    position: fixed;
+    border-radius: 10px;
+    right: 300px;
+    top: 10px;
+    padding: 10px;
+    background-color: rgb(227, 238, 138);
+    border: 1px solid black;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+
+  th {
+    background-color: #999;
+    padding: 10px;
+  }
+
+  th,
+  td {
+    border: 1px #ccc solid;
+    text-align: center;
+  }
+
+  td div {
+    width: calc(100% - 20px);
+    padding: 0px 10px;
+    text-align: right;
+  }
+
+  th div {
+    width: calc(100% - 10px);
+    padding: 0px 5px;
+    text-align: right;
+    font-size: 1.5rem;
+  }
+
+  td img {
+    width: 100px;
+  }
+  a {
+    text-decoration: none;
+    font-size: 20px;
+}
+a:hover{
+    text-decoration: none;
+    font-size: 20px;
+    color: rgb(240, 24, 0);
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+.tong{
+    width: 1300px;
+    height: 2500px;
+    margin: 0 auto;
+    background-color: #eeeef5;
+}
+header{
+    background-image: url(https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn/2023/04/banner/TGDD--Desk--1920x450.jpg);
+    background-size: 100%;
+    width: 1300px;
+    height: 300px;
+    position: relative;
+}
+.menu  {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+height: 40px;
+width: 180px;
+background-color: #ead8d2;
+border-radius:0px 0px 0px 20px;
+}
+.menu ul li{
+    list-style: none;
+    margin-top: -15px;
+    margin-right: 5px;
+    width: 200px;
+}
+.menu ul li a{
+    text-decoration: none;
+    font-size: 30px;
+    color: rgb(17, 16, 16);
+}
+.menu ul li a:hover{
+    text-decoration: none;
+    font-size: 30px;
+    color: rgb(251, 6, 6);
+}
+.login li {
+    line-height: 50px;
+    display: inline-block;
+}
+nav {
+    position: relative;
+    margin-top: -4px;
+    background-color: #fcb317;
+}
+.tim input{
+    position: absolute;
+    right: 25px;
+    top: 10px;
+    width: 250px;
+    height: 25px;
+}
+button.tim{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    width: 40px;   
+    height: 29px;
+}
+button.tim img{
+    width: 10px;
+}
+nav ul {
+    text-align: center;
+    overflow: hidden;
+    margin: 0px;
+    padding: 0px;
+}
+nav ul li {
+    margin: 0px 10px;
+    line-height: 50px;
+    display: inline-block;
+    padding: 0px 10px;
+}
+nav ul li a {
+    text-decoration: none;
+    font-size: 20px;
+    color: rgb(26, 25, 25);
+    font-variant: small-caps;
+}
+
+nav ul li:hover {
+    background-color: rgb(250, 124, 66);
+}
+.iconSP{
+    display: flex;
+    margin-top: -60px;
+}
+.icon{
+    background-color: #dedfe7;
+    margin: 80px;
+    width: 700px;
+    border-radius: 10px;
+    text-align: left;
+    height: 110px;
+    border: 1px solid rebeccapurple;
+}
+.tenicon{
+    text-align: center;
+    margin-top: 20px;
+    color: #fe0101bd;
+    font-size: 30px;
+}
+.anhicon img{
+    width: 100px;
+    margin-top: -2px;
+}
+aside {
+    text-align: center;
+    background-image: url(/anh/nen2.webp);
+    background-repeat:repeat-x ;
+    background-size: 100%;
+    text-transform: uppercase;
+    height: 1530px;
+    font-variant: small-caps;
+    margin-top: -10px;
+    position: relative;
+}
+.anh img{
+    margin-top: 150px;
+    width: 950px;
+    height: 440px;
+}
+.nut{
+    position: relative;
+}
+button.truoc{
+    position: absolute;
+    left: 175px;
+    bottom: 380px;
+    width: 35px;
+    height: 75px;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 5px;
+    opacity:0.3;
+}
+button.truoc:hover{
+    position: absolute;
+    left: 175px;
+    bottom: 380px;
+    width: 35px;
+    height: 75px;
+    border: 1px solid white;
+    background-color: #3c3c3b;
+    color: #eeeef5;
+    border-radius: 5px;
+    opacity:0.8;
+}
+button.sau{
+    position: absolute;
+    right: 175px;
+    bottom: 380px;
+    width: 35px;
+    height: 75px;
+    border: 1px solid white;
+    border-radius: 5px;
+    opacity:0.3;
+}
+button.sau:hover{
+    position: absolute;
+    right: 175px;
+    bottom: 380px;
+    width: 35px;
+    height: 75px;
+    background-color: #504f4d;
+    border: 1px solid white;
+    color: #ead8d2;
+    border-radius: 5px;
+    opacity:0.8;
+}
+aside h1{
+    position: absolute;
+    top: 45px;
+    right: 480px;
+    font-size: 33px;
+    color: rgb(255, 53, 2);
+}
+#time{
+    padding: 30px;
+    color: #1f1604;
+    font-size: 50px;
+    text-align: center;
+    font-weight: bold;
+    width: 600px;
+    margin: auto;
+    border-radius: 15px;
+    border: 4px solid red;
+    box-shadow: 0px 0px 5px 5px red;
+}
+.sp{
+    position: relative;
+    background-color: #fbfbfb;
+    border-radius: 10px;
+    margin: 5px;
+    height: 420px;
+}
+.sp a{
+    text-decoration: none;
+}
+.giasp{
+    position: absolute;
+    top: 350px;
+    right: 50px;
+    color: red;
+    width: 140px;
+    background-color:white;
+}
+input{
+    position: absolute;
+    right: 30px;
+    top: 380px;
+    width:100px;
+    height: 25px;
+    border:1px solid #b4330c;
+    border-radius: 5px;
+}
+button.giohang{
+    position: absolute;
+    width: 47px;
+    height:50px;
+    border: 2px solid #343333;
+    border-radius: 10px;
+    left: 12px;
+    bottom: 10px;
+}
+button.giohang:hover{
+    position: absolute;
+    width: 47px;
+    height:50px;
+    border: 2px solid #ff3c00;
+    color: #ff3c00;
+    border-radius: 10px;
+    left: 12px;
+    bottom: 10px;
+}
+button.giohang img{
+    position: absolute;
+    bottom: -5px;
+    right: -5px;
+    width: 40px;
+    height: 35px;
+}
+button.giohang img:hover{
+    position: absolute;
+    bottom: -5px;
+    right: -5px;
+    width: 40px;
+    height: 35px;
+}
+.tensp{
+    position: absolute;
+    top: 300px;
+    right:35px;
+    width: 180px;
+    font-size: 19px;
+}
+.tensp:hover{
+    position: absolute;
+    top: 300px;
+    right:35px;
+    width: 180px;
+    font-size: 19px;
+    color: #b4330c;
+}
+.sanpham{
+    display: flex;
+    padding: 7px;
+    margin: 7px;
+    height: 300px;
+}
+.sp img{
+    width: 230px;
+    height: 250px;
+    background-color: aliceblue;
+    border: 3px gray solid;
+    box-shadow: 1px 4px 4px 1px gray;
+    border-radius: 10px;
+    margin-top: 50px;
+    margin: 5px;
+    padding-top: 10px;
+    transition-duration: 0.3s;
+}
+.sp img:hover{
+    width: 230px;
+    height: 250px;
+    border: 3px rgb(177, 102, 102) solid;
+    box-shadow: 1px 4px 4px 1px rgb(177, 102, 102);
+    border-radius: 10px;
+    margin-top: 50px;
+    margin: 5px;
+    padding-top: 10px;
+    transform: translate(0px, -6%);
+}
+aside h2{
+    margin-top: 10px;
+    font-size: 40px;
+    color: rgb(255, 86, 2);
+}
+
+footer {
+    margin-top: 580px;
+    height: 60px;
+    background-color: #3d3e42;
+    clear: both;
+}
+footer p {
+    line-height: 40px;
+    font-size: large;
+    text-align: center;
+    color: aliceblue;
+}
+

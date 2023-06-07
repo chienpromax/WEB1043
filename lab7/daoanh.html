@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body onload="anh()">
+    <img src="" width="100px" height="100px" alt="" />
+    <script>
+      function anh() {
+        var img = document.getElementsByTagName("img")[0];
+        img.src = "/New folder/0.webp";
+        img.addEventListener("mouseover", function () {
+          img.src = "/New folder/1.webp";
+        });
+        img.addEventListener("mouseout", function () {
+          img.src = "/New folder/0.webp"; 
+        });
+      }
+    </script>
+  </body>
+</html>

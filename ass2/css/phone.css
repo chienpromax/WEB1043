@@ -1,0 +1,369 @@
+.giohang {
+  position: fixed;
+  border-radius: 10px;
+ margin: auto;
+  height: 40px;
+  background-image: linear-gradient(#F90, #F60);
+  padding: 10px;
+}
+
+.giohang img {
+  width: 40px;
+  float: left;
+  margin-right: 5px;
+}
+
+.giohang span {
+  font-weight: bold;
+  font-size: 2vw;
+  color: yellow;
+  height: 40px;
+  line-height: 40px;
+}
+#showcart{
+  width: 900px;
+  position: fixed;
+  border-radius: 10px;
+  right: 300px;
+  top: 10px;
+  padding: 10px;
+  background-color: rgb(227, 238, 138);
+  border: 1px solid black;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th {
+  background-color: #999;
+  padding: 10px;
+}
+
+th,
+td {
+  border: 1px #ccc solid;
+  text-align: center;
+}
+
+td div {
+  width: calc(100% - 20px);
+  padding: 0px 10px;
+  text-align: right;
+}
+
+th div {
+  width: calc(100% - 10px);
+  padding: 0px 5px;
+  text-align: right;
+  font-size: 1.5rem;
+}
+
+td img {
+  width: 100px;
+}
+a {
+  text-decoration: none;
+  font-size: 20px;
+}
+a:hover{
+  text-decoration: none;
+  font-size: 20px;
+  color: rgb(240, 24, 0);
+}
+
+
+body{
+    margin: 0;
+    padding: 0;
+}
+.tong{
+    width: 1300px;
+    height: 1300px;
+    margin: 0 auto;
+    background-color: #eeeef5;
+}
+header{
+    background-image: url(https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn/2023/04/banner/chungr-MSI-720-220-720x220.png);
+    background-size: 100%;
+    width: 1300px;
+    height: 300px;
+}
+nav {
+    margin-top: -4px;
+    background-color: #ea0c0c;
+}
+nav ul {
+    text-align: center;
+    overflow: hidden;
+    margin: 0px;
+    padding: 0px;
+}
+nav ul li {
+    margin: 0px 20px;
+    line-height: 50px;
+    display: inline-block;
+    padding: 0px 15px;
+}
+nav ul li a {
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    font-variant: small-caps;
+}
+
+nav ul li:hover {
+    background-color: rgb(103, 11, 11);
+}
+aside{
+    float: left;
+    width: 750px;
+}
+.nut{
+  position: relative;
+}
+button.truoc{
+  position: absolute;
+  left: 0px;
+  bottom: 220px;
+  width: 35px;
+  height: 75px;
+  border: 3px solid black;
+  border-radius: 5px;
+  font-size: 30px;
+  opacity:0.2;
+}
+button.truoc:hover{
+  position: absolute;
+  left: 0px;
+  bottom: 220px;
+  width: 35px;
+  height: 75px;
+  border: 3px solid black;
+  border-radius: 5px;
+  font-size: 30px;
+  opacity:0.6;
+}
+button.sau{
+  position: absolute;
+  right: 0px;
+  bottom: 220px;
+  width: 35px;
+  height: 75px;
+  border: 3px solid black;
+  border-radius: 5px;
+  font-size: 30px;
+  opacity:0.2;
+}
+button.sau:hover{
+  position: absolute;
+  right: 0px;
+  bottom: 220px;
+  width: 35px;
+  height: 75px;
+  border: 3px solid black;
+  border-radius: 5px;
+  font-size: 30px;
+  opacity:0.6;
+}
+asi
+.ten{
+    display: flex;
+    text-align: center;
+}
+.ten{
+    width: 200px;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 30px;
+}
+.danhgia{
+    width: 800px;
+    height: 80px;
+    display: flex;
+    margin-top: -10px;
+    position: relative;
+}
+.danhgia button{
+  position: absolute;
+  right: 70px;
+  top: 20px;
+  width: 140px;
+  height: 60px;
+}
+.stars ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  .star {
+    font-size: 2em;
+    color: #ddd;
+    display: inline-block;
+    cursor: pointer;
+  }
+  .orange {
+    color: orange;
+  }
+  .output {
+    margin-top: 30px;
+    margin-left: 10px;
+  }
+  .tong2{
+    width: 700px;
+    height: 500px;
+  }
+  .anh2 img{
+    width: 120px;
+    height: 100px;
+  }
+  article{
+    position: relative;
+    float: right;
+    width: 545px;
+  }
+  .article button{
+    width: 90px;
+    height: 40px;
+    border-radius: 10px;
+    margin: 3px;
+    font-size: 20px;
+  }
+  .article button:hover{
+    width: 90px;
+    height: 40px;
+    border-radius: 10px;
+    border: blue 1px solid;
+    color: blue;
+    margin: 3px;
+    font-size: 20px;
+  }
+  .thongtin{
+    background-color: #fefefe;
+    border: #ea0c0c solid 2px;
+    padding: 4px;
+    border-radius: 3px;
+  }
+  .thongtin h1{
+    margin-left: 20px;
+    
+  }
+  .thongtin button{
+    width: 500px ;
+    height: 70px; 
+    text-align: center;
+    color: black; 
+    background-color: rgb(246, 235, 235);
+    margin: 10px;
+    font-size: 20px;
+  }
+  .thongtin button:hover{
+    width: 500px ;
+    height: 70px; 
+    text-align: center;
+    color: black; 
+    background-color: rgb(243, 89, 89);
+    margin: 10px;
+    font-size: 20px;
+  }
+  .mua{
+    background-color: #eeeef5;
+    margin: 4px;
+  }
+  .spx{
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 200px;
+    height: 200px;
+    background-color: #b4330c;
+}
+button.giohangx{
+  background-color: #f7d3c8;
+  position: absolute;
+  top:449px;
+  right: 27px;
+  width: 501px;
+  height: 70px;
+  border-radius: 0px;
+}
+button.giohangx:hover{
+  background-color: #f34343;
+  position: absolute;
+  top:449px;
+  right: 27px;
+  width: 501px;
+  height: 70px;
+  border-radius: 0px;
+}
+.spx img{
+  width: 200px;
+  height: 200px;
+}
+  .sp{
+    position: relative;
+    border-radius: 10px;
+    margin: 5px;
+    width: 100px;
+    height: 20px;
+}
+.tensp{
+    position: absolute;
+    top: 100px;
+    right:15px;
+    width: 80px;
+    font-size: 19px; text-align: center;
+}
+.tensp:hover{
+    position: absolute;
+    top: 100px;
+    right:15px;
+    width: 80px;
+    font-size: 19px; text-align: center;
+    color: #b4330c;
+}
+.sanpham{
+    display: flex;
+    padding: 7px;
+    margin: 7px;
+    height: 200px;
+    border: #ea0c0c 1px solid;
+    border-radius: 10px;
+}
+.sp img{
+    width: 80px;
+    height: 70px;
+    background-color: aliceblue;
+    border: 3px gray solid;
+    box-shadow: 1px 4px 4px 1px gray;
+    border-radius: 10px;
+    padding-top: 0px;
+    transition-duration: 0.3s;
+}
+.sp img:hover{
+    width: 80px;
+    height: 70px;
+    border: 3px rgb(177, 102, 102) solid;
+    box-shadow: 1px 6px 4px 1px rgb(154, 3, 255);
+    border-radius: 10px;
+    margin: 5px;
+    transform: translate(-5px, -20%);
+}
+tr:nth-child(odd){
+  width: 100px;
+  height: 30px;
+  background-color: #3d3e42;
+  color: aliceblue;
+}
+footer {
+    margin-top: 400px;
+    height: 60px;
+    background-color: #3d3e42;
+    clear: both;
+}
+footer p {
+    line-height: 40px;
+    font-size: large;
+    text-align: center;
+    color: aliceblue;
+}
+

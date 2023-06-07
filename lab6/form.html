@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      button{
+      }
+    </style>
+  </head>
+  <body>
+    <form action="" method="">
+      <input type="text" name="nguoi dung" placeholder="nhap ten" />
+      <br />
+      <input type="number" name="mat khau" placeholder="nhap mat khau" />
+      <br />
+      <select name="rule" id="">
+        <option value="adim">quan tri vien</option>
+        <label for="" id="hienten"></label><br>
+        <option value="nhanvien">nhan vien</option>
+        <option value="nguoidung">nguoi dung</option>
+      </select>
+      <br/>
+      <label for="">gioi tinh</label>
+      <input type="radio" name="nam" value="nam" /><i>nam</i>
+      <input type="radio" name="nam" value="nu" /><i>nu</i>
+      <br />
+      <input type="checkbox" name="remeber" checked /><b>ghi nho</b>
+      <br />
+      <button type="button" onclick="login()">dang ki</button>
+    </form>
+    <script>
+      function login() {
+        var use = document.getElementsByName("nguoi dung")[0];
+        var pass = document.getElementsByName("mat khau")[0];
+        var quyen = document.getElementsByName("rule")[0];
+        var ghinho = document.getElementsByName("remeber")[0];
+        var gioitinh = document.getElementsByName("nam");
+        alert(`ten: ${use.value} \n
+            mat khau: ${pass.value} \n
+            tai khoan: ${quyen.value} \n
+            ghi nho: ${ghinho.checked ? "co" : "khong"}\n
+            gioi tinh: ${gioitinh[0].checked ? "nam" : "nu"}`);
+            var button = event.target;
+            button.style.backgroundColor = 'aqua';
+            button.style.color = 'red';
+      }
+    </script>
+  </body>
+</html>

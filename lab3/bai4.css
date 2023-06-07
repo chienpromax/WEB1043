@@ -1,0 +1,51 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(190, 243, 243);
+}
+.tong{
+    margin: auto;
+    margin-top: 100px;
+    width: 30%;
+    height: 300px;
+    text-align: center;
+    background-color:rgb(255, 238, 4);
+    border-radius: 10px 10px 10px 10px;
+}
+.tong>h1{
+    margin-top: -6px;
+    font-size: 30px;
+    color: red;
+    background-color: rgb(183, 194, 194);
+    border-radius: 10px 10px 0px 0px;
+}
+.khung{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+}
+.khung input{
+    background-color: rgb(0, 255, 255);
+    color: rgb(6, 22, 241);
+    font-size: 25px;
+    border: none;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 10px 10px rgb(255, 162, 2);
+}
+.khung input:hover{
+    background-color: rgb(255, 162, 2);
+    color: rgb(0, 13, 255);
+    font-size: 25px;
+    border: none;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 10px 10px rgb(0, 238, 255);
+}
+.khung img{
+    margin-top: 10px;
+    width: 460px;
+}

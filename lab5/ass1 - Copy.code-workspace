@@ -1,0 +1,38 @@
+{
+	"folders": [
+		{
+			"path": "../ass1 - Copy"
+		},
+		{
+			"path": "../ass2"
+		},
+		{
+			"path": "../lab1"
+		},
+		{
+			"path": "../lab2"
+		},
+		{
+			"path": "../lab3"
+		},
+		{
+			"path": "../lab4"
+		},
+		{
+			"path": "."
+		},
+		{
+			"path": "../lab6"
+		},
+		{
+			"path": "../lab7"
+		},
+		{
+			"path": "../lab8"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "lab5",
+		"liveServer.settings.port": 5501
+	}
+}

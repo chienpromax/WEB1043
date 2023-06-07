@@ -1,0 +1,46 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.tong{
+    margin: auto;
+    margin-top: 100px;
+    width: 30%;
+    height: 500px;
+    text-align: center;
+    background-color:rgb(219, 211, 211);
+    border-radius: 10px 10px 10px 10px;
+}
+.tong>h1{
+    margin-top: -6px;
+    color: red;
+    background-color: rgb(183, 194, 194);
+    border-radius: 10px 10px 0px 0px;
+}
+.result{
+    flex-grow: 1;
+    margin: 5px;
+    text-align: center;
+    font-size: 1.2em;
+    width: 300px;
+    height: 30px;
+    color: rgb(27, 26, 26);
+}
+.hang>input{
+    width: 80px;
+    height:80px;
+    text-align: center;
+    border:3px solid red;
+    margin-top: 5px;
+    border-radius: 10px 10px 10px 10px;
+    font-size: 30px;
+}
+.hang>input:hover{
+    background-color: rgb(155, 155, 151);
+    width: 83px;
+    height:83px;
+    text-align: center;
+    border:3px solid red;
+    margin-top: 5px;
+    border-radius: 10px 10px 10px 10px;
+}

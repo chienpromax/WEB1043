@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    .hh {
+      width: 400px;
+      height: 300px;
+      border: 1px solid red;
+      margin-right: 10px;
+      padding: 10px;
+      float: left;
+    }
+  </style>
+  <body>
+    <form action="#" method="post" onsubmit="return check()">
+      <input type="text" name="use" placeholder="taif kHoan" /><br />
+      <b style="color: red; display: none">nhap lai</b>
+      <input type="text" name="pas" placeholder="mat khau" /><br />
+      <b style="color: red; display: none">nhap lai</b>
+      <button type="submit">dang nhap</button>
+      <hr />
+    </form>
+    <script>
+      function check() {
+        var taikhoan = document.getElementsByName("use")[0];
+        var matkhau = document.getElementsByName("pas")[0];
+        var tuoi = document.getElementsByName("tuoi")[0];
+        var loiuse = document.getElementsByTagName("b")[0];
+        var loipas = document.getElementsByTagName("b")[1;
+        if (taikhoan.value == "") {
+          loiuse.style.display = 'block';
+          return false;
+        } else {
+          loiuse.style.display = "none";
+        }
+        if (matkhau.value == "") {
+          loipas.style.display = "block";
+          return false;
+        } else {
+          loipas.style.display = "none";
+        }
+        if (taikhoan.value != "" && matkhau.value != "" && tuoi.value != "") {
+          alert(`haha`);
+          return true;
+        }
+      }
+    </script>
+  </body>
+</html>

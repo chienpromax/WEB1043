@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<title>Ví dụ minh hoạ cách dùng innerText </title>
+</head>
+<body>
+
+<p>Kế hoạch mua sắm</p>
+
+<div id="box" style="color: red;"></div>
+<p>Thành phố <br>Ninh Bình</p>
+<p>Shop mẹ và bé</p>
+
+
+<button onClick="getElements();">Click và thay đổi giá trị text hiển thị Element</button>
+
+<script>
+function getElements(){
+    let element = document.getElementById('box');
+    element.innerText = "Đi Hà Nội";
+}
+</script>
+</body>
+</html>

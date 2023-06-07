@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+   
+  </head>
+  <body>
+    <div id="container">
+      <h1>Video 4K</h1>
+      <div id="player-container">
+        <video id="myplayer" width="640" src="AVENGERS 4 TRAILER PHONG CÁCH REFUND.mp4" height="360">
+          <source src="AVENGERS 4 TRAILER PHONG CÁCH REFUND.mp4" type="video/mp4" />
+        </video>
+        <div id="controls">
+          <button onclick="playPause()">Play/Pause</button>
+          <button onclick="stopVideo()">Stop</button>
+          <button onclick="replayVideo()">Replay</button>
+          <button onclick="increaseVolume()">Volume (+)</button>
+          <button onclick="decreaseVolume()">Volume (-)</button>
+          <button onclick="muteVolume ()">Mute/Unmute</button>
+        </div>
+      </div>
+    </div>
+    <style>
+      #container {
+        text-align: center;
+      }
+      video {
+        border-radius: 20px;
+      }
+      #controls {
+        margin-top: 20px;
+      }
+    </style>
+    <script>
+      const video = document.querySelector("video");
+      video.currentTime = 5;
+      function playPause() {
+        video.paused ? video.play() : video.pause();
+      }
+      function stopVideo() {
+        video.pause();
+        if (video.currentTime) {
+          video.currentTime = 0;
+        }
+      }
+      function replayVideo() {
+        video.currentTime = 0;
+        video.play();
+      }
+      function increaseVolume() {
+        if (video.volume < 1) {
+          video.volume = parseFloat(video.volume + 0.1).toFixed(1);
+        }
+      }
+      function decreaseVolume() {
+        if (video.volume > 0) {
+          video.volume = parseFloat(video.volume - 0.1).toFixed(1);
+        }
+      }
+      function muteVolume() {
+        if (video.muted) {
+          video.muted = false;
+        } else {
+          video.muted = true;
+        }
+      }
+    </script>
+  </body>
+</html>
